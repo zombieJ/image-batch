@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Batch</title>
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+		#holder {
+			position: relative;
+			display: inline-block;
+		}
+
+		h1 {
+			position: absolute;
+			right: 20px;
+			top: 50px;
+			font-family: "Microsoft Yahei";
+			padding: 0;
+			margin: 0;
+			font-size: 30px;
+			line-height: 100%;
+			color: #FFF;
+			width: 100px;
+			background: rgba(0,0,0,0.2);
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<tbody>
+		<tr>
+			<th>预览</th>
+			<th>导出</th>
+		</tr>
+		<tr>
+			<td>
+				<div id="holder">
+					<img src="bac.jpg" />
+					<h1 id="name">名字</h1>
+				</div>
+			</td>
+			<td>
+				<canvas id="canvas"></canvas>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+	<script src="js/index.js"></script>
+	<script src="node_modules/html2canvas/dist/html2canvas.js"></script>
+</body>
+</html>

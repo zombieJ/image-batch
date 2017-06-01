@@ -1,0 +1,29 @@
+{
+  "name": "image-scaler",
+  "version": "1.0.0",
+  "description": "Simple lib for image scale",
+  "main": "js/index.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "electron js/app.js",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w"
+  },
+  "author": "zombieJ",
+  "license": "MIT",
+  "dependencies": {
+    "html2canvas": "^0.5.0-beta4"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.22",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "electron": "^1.6.10",
+    "typescript": "^2.3.1"
+  }
+}
